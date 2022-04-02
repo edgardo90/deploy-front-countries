@@ -75,7 +75,7 @@ export default function Home(){
                  />
                 <SearchBar /> {/* renderizo "SearchBar.jsx"  */}
             </div>
-            <h1 className={styles.h1}>Country app</h1> 
+            <h1 className={styles.h1}>Country app por edgar</h1> 
             <div  >
                 {currentCountries.length > 0  ? currentCountries.map(a =>{
                     // console.log(a)
