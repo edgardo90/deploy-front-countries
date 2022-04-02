@@ -1,11 +1,14 @@
 .botonHome{
+    margin-top: 1%;
+    margin-left: 1%;
     border: none;
-    border-radius: 7px;
+    border-radius: 10px;
     font-family: 'Cookie', cursive;
     padding-left: 10px;/* agrando el button hacia la izquierda  */
     padding-right: 10px; /* agrando el button hacia la derecha */
     padding-top: 5px; /*agrando el button hacia arriba  */
     padding-bottom: 5px; /* agrando el button hacia abajo */
+    cursor: pointer;
 }
 .botonHome:hover{
     background-color: rgba(160, 208, 212, 0.842);
@@ -22,7 +25,7 @@
 .titulo{
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 2%;
     font-size: 50px;
     color: rgb(14, 1, 1);
     font-family: 'Cookie', cursive;
@@ -32,9 +35,9 @@
     margin-left: 30%;
     margin-right: 25%;
     padding: 50px;
-    font-size: 20px; 
+    font-size: 21px; 
     background-position: center center;
-    color: rgb(0, 0, 0);
+    color: rgb(23, 3, 18);
     font-family: 'Cookie', cursive;
   }
 
@@ -43,6 +46,7 @@
     border-radius: 7px;
     border: none;
     /* font-family: 'Cookie', cursive; */
+    cursor: pointer;
     
   }
   .select:hover{
@@ -65,9 +69,10 @@
     border-radius: 10px;
     margin-left: 30%;
     font-family: 'Cookie', cursive;
+    cursor: pointer;
   }
   .btnCreate:hover{
-      border-radius: 10px;
+    border-radius: 10px;
     background-color:rgb(158, 210, 231);
     color:white;
   }
@@ -79,13 +84,14 @@
     background-position: center center;
     color: rgb(232, 227, 241);
     font-family: 'Cookie', cursive;
-    font-size: 22px
+    font-size: 22px;
   }
 
   .btn{
       border-radius: 10px;
       background-color: red;
       border: none;
+      cursor: pointer;
   }
 
   .btn:hover{

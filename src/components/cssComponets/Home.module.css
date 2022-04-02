@@ -30,6 +30,7 @@
     border: none;
     border-radius: 7px;
     font-family: 'Cookie', cursive;
+    cursor: pointer;
 }
 .button:hover{   /*cambia el botton cuando el mouse pasa por ahi  */
     background-color: rgba(160, 208, 212, 0.459);

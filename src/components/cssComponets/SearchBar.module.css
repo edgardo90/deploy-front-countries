@@ -2,6 +2,7 @@
     border: none;
     border-radius: 7px;
     font-family: 'Cookie', cursive;
+    cursor: pointer;
 }
 .button:hover{
     background-color: rgba(160, 208, 212, 0.459);
@@ -38,6 +39,7 @@
     border: none;
     border-radius: 7px;
     font-family: 'Cookie', cursive;
+    cursor: pointer;
 }
 .paginado:hover{
     background-color: rgba(160, 208, 212, 0.459);

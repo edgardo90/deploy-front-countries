@@ -3,6 +3,7 @@
     border-radius: 7px;
     border: none;
     font-family: 'Cookie', cursive;
+    cursor: pointer;
 }
 .select:hover{ /*cambia cuando toco los select  */
     background-color: rgba(160, 208, 212, 0.459);

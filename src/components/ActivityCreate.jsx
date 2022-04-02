@@ -37,7 +37,6 @@ export function ActivityCreate(){
     const allCountries = useSelector(state => state.countries ); // esto seria hacer lo mismo que el mapStateToProps, va ser un array con todas los paises
     const allActivities = useSelector(state =>state.activities ) // esto seria hacer lo mismo que el mapStateToProps, va ser un array con todas las actividades
     const [data , setData] = useState({
-        // fecha:"", // prueba para formato fecha
         name:"",
         duration:"",
         difficulty:"",
@@ -155,20 +154,13 @@ export function ActivityCreate(){
             <h1 className={styles.titulo} >Create the activity</h1>
            <form className={styles.formulario}  onSubmit={event => handleSubmit(event)}>
                <div>
-                   {/* <label >Fecha:</label> // ejemplo de como traer la fecha por redux
-                   <input
-                    type="datetime-local"
-                    name="fecha"
-                    value={data.fecha}
-                    onChange={event => handleChange(event)}
-                   /> */}
-                   {/* <br /> */}
                    <label >Name: </label>
                    <input
                     type="text"
                     value={data.name}
                     name="name"
-                    onChange={event =>handleChange(event)} 
+                    onChange={event =>handleChange(event)}
+                    style={{borderRadius:"10px", width : "200px", heigth : "1px"}} 
                     />
                     {errors.name && 
                      <p  style={{color: "red" , fontWeight: 700 , fontSize: 14}}  >{errors.name}</p>
@@ -182,6 +174,7 @@ export function ActivityCreate(){
                    value={data.duration} 
                    name="duration"
                    onChange={event =>handleChange(event)}
+                   style={{borderRadius:"7px", width : "200px", heigth : "1px"}} 
                    />
                    {errors.duration &&
                     <p  style={{color: "red" , fontWeight: 700 , fontSize: 14}}  >{errors.duration}</p> 
@@ -192,11 +185,12 @@ export function ActivityCreate(){
                    <label >Difficulty : /</label>
                    {difultad.map(d =>{
                        return(
-                           <label key={d} > {d}:
+                           <label key={d} > {d}
                                <input
                                 type="radio"
                                 id={d}
                                 name="difficulty"
+                                style={{cursor: "pointer"}}
                                 value={d}
                                 onChange={event =>handleRadio(event)} 
                                />/
@@ -212,11 +206,12 @@ export function ActivityCreate(){
                    <label >Season :  /</label>
                    {temporada.map(s =>{
                        return(
-                           <label key={s} > {s}:
+                           <label key={s} > {s}
                                <input
                                 type="checkbox"
                                 id={s}
                                 name="season"
+                                style={{cursor: "pointer"}}
                                 value={s}
                                 onChange={event =>handleChekBox(event)} 
                                 />/

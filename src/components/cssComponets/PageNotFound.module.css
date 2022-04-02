@@ -11,6 +11,7 @@
     padding-right: 10px; /* agrando el button hacia la derecha */
     padding-top: 5px; /*agrando el button hacia arriba  */
     padding-bottom: 5px; /* agrando el button hacia abajo */
+    cursor: pointer;
 }
 .btn:hover{
     background-color: rgba(160, 208, 212, 0.842);
